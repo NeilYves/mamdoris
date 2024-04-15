@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="login.css">
+  <title>Yves Website Sign Up</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="signupForm">
+                    <h2>Sign Up</h2>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            
+            // You can perform form validation here if needed
+            
+            // Assuming form validation passes, you can proceed with form submission or other actions
+            alert("Sign up successful!"); // For demonstration, replace this with actual submission logic
+            // You may want to redirect the user to a different page after successful sign up
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
